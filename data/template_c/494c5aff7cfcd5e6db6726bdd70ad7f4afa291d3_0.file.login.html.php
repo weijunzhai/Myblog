@@ -1,0 +1,123 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-08-30 00:45:59
+  from "H:\xampp\htdocs\phpAndMysql\MVC\tpl\admin\login.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_59a5eea7266f47_31836909',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '494c5aff7cfcd5e6db6726bdd70ad7f4afa291d3' => 
+    array (
+      0 => 'H:\\xampp\\htdocs\\phpAndMysql\\MVC\\tpl\\admin\\login.html',
+      1 => 1504040010,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_59a5eea7266f47_31836909 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>后台登录</title>
+	
+	<link rel="stylesheet" type="text/css" href="img/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="img/css/mystyle.css">
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="img/css/ie.css" type="text/css" media="screen" />
+
+
+</head>
+
+
+<body>
+
+<!-- Navbar -->
+	<div>
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="index.php">VikingBlog</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    
+		      <form class="navbar-form navbar-right">
+		        <div class="form-group">
+		          <input type="text" class="form-control" placeholder="Search">
+		        </div>
+		        <button type="submit" class="btn btn-default">Search</button>
+		      </form>
+		      <ul class="nav navbar-nav navbar-right">
+		        <!-- <li><a href="#">Sign In</a></li> -->
+		        <li><a href="admin.php?controller=admin&method=login">Admin Sign In</a></li>
+		     
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</div>	
+	
+<!-- Main content -->
+
+	<div class="container mainbody">
+		<div class="sidebox row col-md-3 hidden-xs hidden-sm">
+			<img src="holder.js/100px600">	
+		</div>
+
+		<div class="row mainbox col-md-9">
+			<h3>Administrator Login</h3>
+			<hr>
+			<form id="form1" name="form1" method="post" action="admin.php?controller=admin&method=login" class="form-horizontal">
+				<div class="form-group">
+					<label for="username" class="col-sm-2 control-label">Username</label>
+					<div class="col-sm-10">
+						<input type="text" name="username" id="username" class="form-control">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="password" class="col-sm-2 control-label">Password</label>
+					<div class="col-sm-10">
+						<input type="password" name="password" id="password" class="form-control">
+					</div>
+				</div>
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" name="submit" class="btn btn-primary">Login</button>
+				</div> 
+			</form>
+		</div>
+		
+	</div>
+
+<!-- footer -->
+	<div class="space"></div>
+	<div class="container space myfooter">
+	  <footer>
+	      <p align=center>© Copyright 2017 Weijun Zhai</p>
+	  </footer>
+	</div>
+	
+	<?php echo '<script'; ?>
+ src="img/js/holder.min.js"><?php echo '</script'; ?>
+>
+</body>
+
+</html><?php }
+}

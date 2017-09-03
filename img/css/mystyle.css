@@ -1,0 +1,22 @@
+.mainbody{
+	position: relative;
+	top: 60px;
+	margin-bottom: 20px;
+}
+
+.mainbox{
+	margin-left: 20px;
+}
+
+.space{
+	position: relative;
+	top: 60px;	
+}
+
+/*.sidebox{
+	background: #eee;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	margin-bottom: 20px;
+	margin-right: 30px;
+}*/

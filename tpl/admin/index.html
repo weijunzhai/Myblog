@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Back End Center</title>
+	
+	<link rel="stylesheet" href="img/css/mystyle.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="img/css/bootstrap.min.css" />
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="img/css/ie.css" type="text/css" media="screen" />
+	<script src="img/js/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+<!-- Navbar -->
+	<div>
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Back-End Management</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      
+		      <form class="navbar-form navbar-right" method="GET" action="index.php?controller=index&method=search">
+		        <div class="form-group">
+		          <input type="text" class="form-control" placeholder="Search" name="key">
+		        </div>
+		        <button type="submit" class="btn btn-default">Search</button>
+		      </form>
+		      <ul class="nav navbar-nav navbar-right">
+		        <!-- <li><a href="#">Sign In</a></li> -->
+		        <li><a href="index.php">My Blogs</a></li>
+		        
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</div>
+	
+	<div class="container mainbody">
+	
+		{include file='admin/leftmenu.html'}
+
+
+		<div class="row mainbox col-md-9">
+			<article>
+				<header><h3>There are {$newsnum} blogs</h3></header>
+				<div>
+					<p></p>
+					<div></div>
+				</div>
+			</article><!-- end of stats article -->
+
+			<div></div>
+
+			<div></div>
+		</div>
+	</div>
+
+<!-- footer -->
+	<div class="space"></div>
+	<div class="container space myfooter">
+	  <footer>
+	      <p align=center>© Copyright 2017 Weijun Zhai</p>
+	  </footer>
+	</div>
+
+
+
+</body>
+
+</html>
